@@ -1,18 +1,51 @@
+---
+const pageTitle = "About Me";
+
+
+const identity = {
+  firstName: "Franco",
+  country: "Argentina",
+  occupation: "Software Developer",
+  hobbies: ["programming", "skating", "football", "music"],
+};
+
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Expo"];
+
+const happy = true;
+const finished = false;
+const goal = 3;
+---
+
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Astro-Blog</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
     <a href="/">Home</a>
     <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
-    <h1>About me</h1>
-    <h4>Software Developer</h4>
+    <a href="/blog/">My Astro Learning Blog</a>
+    <h1>{pageTitle}</h1>
+    <h4>{identity.occupation}</h4>
+
+    {identity.hobbies.length >= 2 && 
+      <ol>
+        <li>{identity.hobbies[0]}</li>
+        <li>{identity.hobbies[1]}</li>
+      </ol>
+    }
+
     <p>
-      I'm Franco De Bernardi, and this is my blog. I thought the idea of making
+      My skills are:
+      <ul>
+        {skills.map((skill) => <li>{skill}</li>)}
+      </ul>
+    </p>
+    <p>
+      I'm {identity.firstName}, I live in {identity.country} and this is my blog. I thought the idea of making
       blogs was almost gone but it seems that <a
         target="_blank"
         href="https://astro.build">Astro</a
@@ -22,5 +55,11 @@
       So I think you would found some really good news or is it blogs? I don't know,
       but I really hope this project help you to learn more about Astro as I am doing.
     </p>
+
+    {happy && <p>I am happy to be learning Astro!</p>}
+
+    {finished && <p>I finished this tutorial!</p>}
+
+    {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
   </body>
 </html>

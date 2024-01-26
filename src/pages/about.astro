@@ -1,6 +1,6 @@
 ---
+import '../styles/global.css';
 const pageTitle = "About Me";
-
 
 const identity = {
   firstName: "Franco",
@@ -12,10 +12,10 @@ const identity = {
 const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Expo"];
 
 const happy = true;
-const finished = false;
-const goal = 3;
+const skillColor = "orange";
+const fontWeight = 'bold';
+const textCase = "upperCase"
 ---
-
 
 <!doctype html>
 <html lang="en">
@@ -23,43 +23,58 @@ const goal = 3;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{pageTitle}</title>
+    <style define:vars={{skillColor, fontWeight, textCase}}>
+      .skill {
+        color: var(--skillColor);
+        font-weight: var(--fontWeight);
+        text-transform: var(--textCase);
+      }
+    </style>
+    
   </head>
-  <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">My Astro Learning Blog</a>
-    <h1>{pageTitle}</h1>
-    <h4>{identity.occupation}</h4>
+  <body class="px-page-gutter">
+    <header class="flex w-full justify-center header-mt">
+      <section class="w-full italic">
+        <a href="/">Home</a>
+        <span>/</span>
+        <a href="/about/#">About</a>
+      </section>
+    </header>
+    
+    <main class="flex flex-column justify-center main-mt">
+      <h1>{pageTitle}</h1>
+      <hr class="w-full">
+      <section class="w-full">
+        <h4>{identity.occupation}</h4>
+        {
+          identity.hobbies.length >= 2 && (
+            <ol>
+              <li>{identity.hobbies[0]}</li>
+              <li>{identity.hobbies[1]}</li>
+            </ol>
+          )
+        }
+        <p>
+          My skills are:
+          <ul>
+            {skills.map((skill) => <li class="skill">{skill}</li>)}
+          </ul>
+        </p>
+        <p>
+          I'm {identity.firstName}, I live in {identity.country} and this is my blog.
+          I thought the idea of making blogs was almost gone but it seems that <a
+            target="_blank"
+            href="https://astro.build">Astro</a
+          >
+          and it's superpowers it is bringing in back to life. I built this blog because
+          I want to learn more about this awesome web framework and it's super capabilities.
+          So I think you would found some really good news or is it blogs? I don't know,
+          but I really hope this project help you to learn more about Astro as I am doing.
+        </p>
+      </section>
 
-    {identity.hobbies.length >= 2 && 
-      <ol>
-        <li>{identity.hobbies[0]}</li>
-        <li>{identity.hobbies[1]}</li>
-      </ol>
-    }
+      {happy && <p>I am happy to be learning Astro!</p>}
 
-    <p>
-      My skills are:
-      <ul>
-        {skills.map((skill) => <li>{skill}</li>)}
-      </ul>
-    </p>
-    <p>
-      I'm {identity.firstName}, I live in {identity.country} and this is my blog. I thought the idea of making
-      blogs was almost gone but it seems that <a
-        target="_blank"
-        href="https://astro.build">Astro</a
-      >
-      and it's superpowers it is bringing in back to life. I built this blog because
-      I want to learn more about this awesome web framework and it's super capabilities.
-      So I think you would found some really good news or is it blogs? I don't know,
-      but I really hope this project help you to learn more about Astro as I am doing.
-    </p>
-
-    {happy && <p>I am happy to be learning Astro!</p>}
-
-    {finished && <p>I finished this tutorial!</p>}
-
-    {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
+    </main>
   </body>
 </html>

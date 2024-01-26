@@ -1,5 +1,5 @@
 ---
-const pageTitle = "Home Page"
+import "../styles/global.css";
 ---
 
 <html lang="en">
@@ -8,13 +8,33 @@ const pageTitle = "Home Page"
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Home</title>
 	</head>
-	<body>
-		<a href="/">{pageTitle}</a>
-		<a href="/about/">About</a>
-		<a href="/blog/">My Astro Learning Blog</a>
-		<h1>Astro</h1>
-		<h1>My Astro site</h1>
+	<body class="px-page-gutter">
+		<header class="flex w-full justify-center header-mt">
+			<section class="w-full italic">
+				<a href="/">Home</a>
+			</section>
+		</header>
+		<main class="flex justify-center main-mt">
+			<section class="w-full">
+				<h1>
+					So this is a blog, built with a super reliable and performant 'thing'
+					called <a href="https://astro.build/" target="_blank">Astro</a>
+				</h1>
+				<p>
+					Welcome to my space, here you will find some cool stuff about
+					technologies and other important things that we should know or at
+					least, be aware of.
+				</p>
+				<span class="italic">If you want to know more, check the <a href="/about">About</a> page</span>
+			</section>
+		</main>
 	</body>
 </html>

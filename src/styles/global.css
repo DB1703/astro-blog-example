@@ -1,0 +1,59 @@
+html {
+  background-color: #121212;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+body {
+  line-height: 1.5;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.mx-auto {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.px-page-gutter {
+	padding-left: 20vw;
+	padding-right: 20vw;
+}
+
+/* A cambiar para media responsive */
+
+.w-full {
+  width: 100%;
+}
+
+/* A cambiar para media responsive */
+
+.header-mt {
+  margin-top: 100px;
+}
+
+.main-mt {
+  margin-top: 40px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}

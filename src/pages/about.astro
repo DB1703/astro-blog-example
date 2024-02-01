@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Header from '../components/Header.astro';
 const pageTitle = "About Me";
 
 const identity = {
@@ -33,13 +34,7 @@ const textCase = "upperCase"
     
   </head>
   <body class="px-page-gutter">
-    <header class="flex w-full justify-center header-mt">
-      <section class="w-full italic">
-        <a href="/">Home</a>
-        <span>/</span>
-        <a href="/about/#">About</a>
-      </section>
-    </header>
+    <Header route="About"/>
     
     <main class="flex flex-column justify-center main-mt">
       <h1>{pageTitle}</h1>

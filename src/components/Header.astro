@@ -1,0 +1,17 @@
+---
+import '../styles/global.css'
+
+const { route } = Astro.props
+
+const routeURL = route && route.toLowerCase();
+---
+
+<header class="flex w-full justify-center header-mt">
+  <section class="w-full italic">
+    <a href="/">Home</a>
+    {route &&
+      <span>/</span>
+      <a href=`/${routeURL}`>{route}</a>
+    }
+  </section>
+</header>

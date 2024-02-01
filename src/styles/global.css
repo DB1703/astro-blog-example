@@ -30,6 +30,9 @@ a {
 	padding-right: 20vw;
 }
 
+.padding-10px {
+  padding: 10px;
+}
 /* A cambiar para media responsive */
 
 .w-full {
@@ -50,10 +53,22 @@ a {
   display: flex;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 .flex-column {
   flex-direction: column;
 }
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.h-detail {
+  height: 50vh
 }

@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import Header from "../components/Header.astro";
 import CardBlog from "../components/CardBlog.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
@@ -33,13 +34,15 @@ import CardBlog from "../components/CardBlog.astro";
 				</p>
 				<span class="italic">If you want to know more, check the <a href="/about">About</a> page</span>
 			</section>
-			<hr class="w-full">
-			<section class="flex wrap justify-space-between">
+			<hr class="w-full header-mt">
+			<section class="flex wrap justify-space-between header-mt">
 				<CardBlog />
 				<CardBlog />
 				<CardBlog />
 				<CardBlog />
 			</section>
 		</main>
+
+		<Footer />
 	</body>
 </html>

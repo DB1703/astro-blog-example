@@ -1,0 +1,85 @@
+---
+import '../styles/global.css';
+import { Github } from 'simple-icons-astro';
+import { Linkedin } from 'simple-icons-astro';
+import { Soundcloud } from 'simple-icons-astro';
+---
+
+<style>
+  p, li {
+    font-size: smaller;
+  }
+
+  h5 {
+    margin: 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0%;
+  }
+
+  .a {
+    color: white
+  }
+
+  
+  
+</style>
+
+<footer class="flex flex-column header-mt">
+  <hr class="w-full">
+  <div class="flex justify-space-between" style={{marginTop: '40px'}}>
+    <section class="flex flex-column padding-10px">
+      <header>
+        <h5>Not a super blog</h5>
+      </header>
+  
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+    </section>
+  
+    <section class="flex flex-column padding-10px">
+      <header>
+        <h5>I'm a human</h5>
+      </header>
+  
+      <p>
+        Right from Ciudad Autónoma de Buenos Aires
+      </p>
+    </section>
+  
+    <section class="flex flex-column padding-10px">
+      <header>
+        <h5>In case you're lost</h5>
+      </header>
+  
+      <ul class="italic">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </section>
+
+    <section class="flex flex-column padding-10px">
+      <header>
+        <h5>Know me a little bit more</h5>
+      </header>
+  
+      <div class="flex justify-content-space-between" style={{gap: '23%', paddingTop: '25px'}}>
+
+        <a href="https://www.linkedin.com/in/franco-de-bernardi/" target="_blank">
+          <Linkedin/>
+        </a>
+        <a href="https://github.com/db1703" target="_blank" style={{color: 'white'}}>
+          <Github/>
+        </a>
+        <a href="https://soundcloud.com/franco-de-bernardi" target="_blank" style={{color: '#ff5500'}}>
+          <Soundcloud/>
+        </a>
+      </div>
+    </section>
+  
+  </div>
+
+</footer>

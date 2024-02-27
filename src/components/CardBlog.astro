@@ -1,7 +1,7 @@
 ---
 import { ArrowRight } from 'lucide-astro'
 
-const { title, url } = Astro.props;
+const { title, url, description } = Astro.props;
 
 ---
 
@@ -26,8 +26,7 @@ const { title, url } = Astro.props;
   </header>
   <section>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.  
-      impedit nihil corrupti explicabo at dignissimos magnam!
+      {description}
     </p>
   </section>
   <footer>

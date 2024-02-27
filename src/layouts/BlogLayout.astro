@@ -1,0 +1,25 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const { frontmatter } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{frontmatter.title}</title>
+</head>
+<body class="px-page-gutter">
+  <Header isABlog={true} nameBlog={frontmatter.title} blogURL={frontmatter.blogUrl}/>
+  <main class="flex flex-column justify-center main-mt">
+    <i>{frontmatter.pubDate.slice(0, 10)}</i>
+    <slot/>
+  </main>
+
+  <Footer />
+</body>
+</html>

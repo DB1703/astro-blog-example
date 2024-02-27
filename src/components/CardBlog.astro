@@ -1,5 +1,8 @@
 ---
 import { ArrowRight } from 'lucide-astro'
+
+const { title, url } = Astro.props;
+
 ---
 
 <style>
@@ -19,7 +22,7 @@ import { ArrowRight } from 'lucide-astro'
 </style>
 <div>
   <header>
-    <h3>This is a title of a blog</h3>
+    <h3>{title}</h3>
   </header>
   <section>
     <p>
@@ -28,7 +31,7 @@ import { ArrowRight } from 'lucide-astro'
     </p>
   </section>
   <footer>
-    <a class="flex" style={{gap: '10px'}} href="/titleBlog1" >
+    <a class="flex" style={{width: 'fit-content', gap: '10px'}} href=`blogs/${url}`>
       Go
       <ArrowRight style={{color: 'white'}}/>
     </a>

@@ -20,7 +20,7 @@ import Footer from "../components/Footer.astro";
 		<title>Home</title>
 	</head>
 	<body class="px-page-gutter">
-		<Header/>
+		<Header isABlog={false}/>
 		<main class="flex flex-column justify-center main-mt">
 			<section class="w-full">
 				<h1>
@@ -36,10 +36,10 @@ import Footer from "../components/Footer.astro";
 			</section>
 			<hr class="w-full header-mt">
 			<section class="flex wrap justify-space-between header-mt">
-				<CardBlog />
-				<CardBlog />
-				<CardBlog />
-				<CardBlog />
+				<CardBlog title="Nuclear Energy at it's peak" description="" url="huge-comeback-for-the-nuclear-energy" />
+				<CardBlog title="Are the Apple Vision Pro reinventing the VR world?" description="" url="apple-vision-pro" />
+				<CardBlog title="Lorem ipsum sit amet" url="testBlog3"/>
+				<CardBlog title="Lorem ipsum sit amet" url="testBlog4"/>
 			</section>
 		</main>
 

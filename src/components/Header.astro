@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css'
 
-const { route } = Astro.props
+const { route, isABlog, nameBlog, blogURL } = Astro.props
 
 const routeURL = route && route.toLowerCase();
 ---
@@ -12,6 +12,14 @@ const routeURL = route && route.toLowerCase();
     {route &&
       <span>/</span>
       <a href=`/${routeURL}`>{route}</a>
+      
+    }
+    {isABlog ? 
+      <span>/</span>
+      <a href="/blogs">Blogs</a>
+      <span>/</span>
+      <a href=`blogs/${blogURL}`>{nameBlog}</a>
+    : undefined
     }
   </section>
 </header>

@@ -52,7 +52,7 @@ Germany closed all the power plants that were working, and know relies on France
 
 The most basic way to contain this, and not throw it away, it's to keep it contained and secure. But something really interesting about the Nuclear waste is that is really tiny in volume. All of the nuclear waste in the US could fit on a football field, stacked less than 10 yards high. Also it has never killed or injured anyone.
 
-And something new came up. Spent fuel can be recycled and used again as fuel in reactors. But it is not yet been used widely.
+And something new came up. Spent fuel can be recycled and used again as fuel in reactors. But it is not been used widely yet.
 
 
 #### Resources

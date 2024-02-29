@@ -20,10 +20,7 @@ A UI that integrates with the physical surroundings, more sensors than ever, and
 “Creating our first spatial computer required invention across nearly every facet of the system,” said Mike Rockwell, Apple’s vice president of the Technology Development Group.
 Also it has support for game controllers, I'm sure about the dualshock 4 and DualSense 5 from Playstation, but not from the Xbox ones. Keyboards, trackpads and mouse obviusly can be used to, at least the Apple ones.
 
-<video width="100%" height="50%" controls>
-  <source src="../../../public/appleVision/Apple-WWDC23-Vision-Pro-VisionOS-home-230605/Apple-WWDC23-Vision-Pro-VisionOS-home-230605/Apple-WWDC23-Vision-Pro-VisionOS-home-230605.mp4" type="video/mp4"> 
-    <p>Your browser does not support the video tag.</p>
-</video>
+<iframe width="100%" height="500"src="https://www.youtube.com/embed/aJ8lLdo6x_8" style="border:none"></iframe> 
 
 *Source: Apple*
 

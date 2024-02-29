@@ -1,28 +1,45 @@
 ---
-const pageTitle = "My Astro Learning Blog";
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import BlogSection from '../components/BlogSection.astro';
 ---
 
 
-<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{pageTitle}</title>
-  </head>
-  <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">{pageTitle}</a>
-    <h1>Don't expect a New York Times special news</h1>
-    <span>15/1/2024</span>
-    <p>
-      <ul>
-        <li>It is this the year that Apple will put the usb-C connector in the front of the Magic Mouse?</li>
-        <li><a href="/posts/post-1/">Post 1</a></li>
-        <li><a href="/posts/post-2/">Post 2</a></li>
-        <li><a href="/posts/post-3/">Post 3</a></li>
-      </ul>
-    </p>
-  </body>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Blogs</title>
+	</head>
+	<body class="px-page-gutter">
+		<Header route="Blogs" isABlog={false}/>
+		<main class="flex flex-column justify-center main-mt">
+			<section class="w-full">
+        <BlogSection title="Huge comeback for the Nuclear Energy" description="A small blog about nuclear energy, promising stuff and things that maybe you didn't know" 
+        date="27-02-2023" blogURL="/huge-comeback-for-the-nuclear-energy" hr={true}/>
+
+        <BlogSection title="Are the Apple Vision Pro reinventing the VR world?" description="Apple makes it's move through the VR world for the first. Let's check it out" 
+        date="29-02-2023" blogURL="/apple-vision-pro" hr={true}/>
+
+        <BlogSection title="Lorem ipsum sit amet" description="Lorem ipsum dolor sit amet consectetur adipisicing elit." 
+        date="27-02-2023" blogURL="/huge-comeback-for-the-nuclear-energy" hr={true}/>
+
+        <BlogSection title="Lorem ipsum sit amet" description="Lorem ipsum dolor sit amet consectetur adipisicing elit." 
+        date="27-02-2023" blogURL="/huge-comeback-for-the-nuclear-energy" hr={false}/>
+
+				
+			</section>
+		</main>
+
+		<Footer />
+	</body>
 </html>

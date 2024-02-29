@@ -1,0 +1,24 @@
+---
+import '../styles/global.css'
+import { ArrowRight } from 'lucide-astro';
+
+const { title, description, date, blogURL, hr } = Astro.props;
+
+---
+
+<header class="flex w-full justify-center">
+  
+  <section class="w-full italic" style="margin-top: 5%;">
+    <i>{date}</i>
+    <h3>{title}</h3>
+
+    <div class="flex align-items-center justify-space-between" style="gap: 5px;">
+      <p>{description}</p>
+      <a href=`blogs${blogURL}`>
+        <ArrowRight/>
+      </a>
+    </div>
+    
+    {hr ? <hr class="w-full" style="margin-top: 5%;"> : undefined}
+  </section>
+</header>

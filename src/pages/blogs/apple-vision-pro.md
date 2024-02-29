@@ -22,7 +22,7 @@ Also it has support for game controllers, I'm sure about the dualshock 4 and Dua
 
 <video width="100%" height="50%" controls>
   <source src="../../../public/appleVision/Apple-WWDC23-Vision-Pro-VisionOS-home-230605/Apple-WWDC23-Vision-Pro-VisionOS-home-230605/Apple-WWDC23-Vision-Pro-VisionOS-home-230605.mp4" type="video/mp4"> 
-    <span>Your browser does not support the video tag.</span>
+    <p>Your browser does not support the video tag.</p>
 </video>
 
 *Source: Apple*

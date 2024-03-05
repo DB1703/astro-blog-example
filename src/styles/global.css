@@ -96,4 +96,8 @@ img {
   #column-blogs {
     flex-direction: column;
   }
+
+  ol {
+    width: 100%;
+  }
 }

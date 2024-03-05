@@ -40,4 +40,6 @@ I know that this blog may feel short, but I am getting used to writing, hope you
 
 #### Resources
 
-1. https://www.apple.com/newsroom/2023/06/introducing-apple-vision-pro/
+<ol class="resources">
+<li>https://www.apple.com/newsroom/2023/06/introducing-apple-vision-pro/</li>
+</ol>

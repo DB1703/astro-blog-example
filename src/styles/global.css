@@ -97,7 +97,9 @@ img {
     flex-direction: column;
   }
 
-  ol {
-    width: 100%;
+  .resources {
+    font-size: 12px;
+    list-style: none;
+    padding-left: 0;
   }
 }

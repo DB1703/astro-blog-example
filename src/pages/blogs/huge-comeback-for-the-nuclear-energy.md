@@ -57,7 +57,7 @@ And something new came up. Spent fuel can be recycled and used again as fuel in 
 
 #### Resources
 
-<ol>
+<ol class="resources">
 <li>https://juliadewahl.com/nuclear-energy-past-present-future</li>
 <li>https://tierrasustentable.com/ambiente/energia-nuclear-que-es-ventajas-y-desventajas-de-su-uso/</li>
 <li>https://www.ngenespanol.com/ciencia/cual-es-la-diferencia-entre-fusion-nuclear-y-fision-nuclear/</li>

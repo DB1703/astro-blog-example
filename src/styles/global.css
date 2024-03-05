@@ -81,3 +81,19 @@ img {
 .h-detail {
   height: 50vh
 }
+
+.gap {
+  gap: 23%;
+}
+
+
+@media (width <= 640px) {
+  .px-page-gutter {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  #column-blogs {
+    flex-direction: column;
+  }
+}

@@ -19,12 +19,21 @@ import { Soundcloud } from 'simple-icons-astro';
     padding: 0%;
   }
   
+  @media (width <= 640px) {
+  #group-footer {
+    flex-direction: column;
+  }
+
+  #icons-footer {
+    gap: 40%
+  }
+}
   
 </style>
 
-<footer class="flex flex-column header-mt">
+<footer class="flex flex-column header-mt w-full">
   <hr class="w-full">
-  <div class="flex justify-space-between" style={{marginTop: '40px'}}>
+  <div id="group-footer" class="flex justify-space-between" style={{marginTop: '40px'}}>
     <section class="flex flex-column padding-10px">
       <header>
         <h5>Not a super blog</h5>
@@ -75,7 +84,7 @@ import { Soundcloud } from 'simple-icons-astro';
         <h5>Know me a little bit more</h5>
       </header>
   
-      <div class="flex justify-content-space-between" style={{gap: '23%', paddingTop: '25px'}}>
+      <div id="icons-footer" class="flex justify-content-space-between gap" style={{ paddingTop: '25px'}}>
 
         <a role="link" href="https://www.linkedin.com/in/franco-de-bernardi/" target="_blank" style={{color: '#0a66c2'}}>
           <Linkedin/>

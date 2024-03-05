@@ -12,12 +12,18 @@ const { title, url, description } = Astro.props;
     border-radius: 10px;
     padding: 10px;
     margin-top: 1%;
-    margin-bottom: 1%;
+    margin-bottom: 5%;
   }
 
   h3 {
     margin: 0;
   }
+
+  @media (width <= 640px) {
+  div {
+    width: 100%;
+  }
+}
 
 </style>
 <div>

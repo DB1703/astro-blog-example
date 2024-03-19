@@ -42,11 +42,14 @@ const textCase = "upperCase"
       <hr class="w-full">
       <section class="w-full">
         <h4>{identity.occupation}</h4>
+        <p>My hobbies are</p>
         {
           identity.hobbies.length >= 2 && (
             <ol>
               <li>{identity.hobbies[0]}</li>
               <li>{identity.hobbies[1]}</li>
+              <li>{identity.hobbies[2]}</li>
+              <li>{identity.hobbies[3]}</li>
             </ol>
           )
         }
